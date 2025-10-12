@@ -1,10 +1,10 @@
 //Task 4.1:
-let PI = Math.PI;
+const PI = Math.PI;
 let cicleRadius = 10;
 
 let calcCircleSquare = () => {
     let circleSquare = PI * Math.pow(cicleRadius,2);
-    return Math.round(( circleSquare + Number.EPSILON) * 100) / 100;
+    return Number(circleSquare.toFixed(2));
 
 };
 console.log(calcCircleSquare());
@@ -15,7 +15,7 @@ let oblongWidth = 5.23;
 
 let calcOblongSquare = () => {
     let oblongSquare = oblongLength * oblongWidth;
-    return Math.round(( oblongSquare + Number.EPSILON) * 100) / 100;
+    return Number(oblongSquare.toFixed(2));
 };
 console.log(calcOblongSquare());
 
@@ -25,7 +25,7 @@ let cylinderheight = 5;
 
 let calcCylinderVolume = () => {
     let cylinderVolume = PI * Math.pow(cylinderRadius,2) * cylinderheight;
-    return Math.round(( cylinderVolume + Number.EPSILON) * 100) / 100;
+    return Number(cylinderVolume.toFixed(2));
 
 };
 console.log(calcCylinderVolume());
