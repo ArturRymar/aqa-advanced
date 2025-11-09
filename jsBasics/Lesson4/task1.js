@@ -1,4 +1,4 @@
-let myName = "Artur"; // string
+let myName = 'Artur'; // string
 let age = 30; // number
 let isStudent = true; // boolean
 let isTerminated = null; //null
